@@ -40,32 +40,46 @@ class HomePage extends StatelessWidget {
         height: 50,
         child: BottomAppBar(
           color: Colors.white,
-          child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.home_filled),
               ),
-
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.search_outlined),
               ),
               IconButton(
                 onPressed: () {},
-                icon:Container(
+                icon: Container(
                   child: Image.asset(
-                    "assets/icons/instagram-reels.png",width: 20
-                    ,
+                    "assets/icons/instagram-reels.png",
+                    width: 20,
                   ),
-                ) ,
+                ),
               ),
               IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.favorite_border),
-              ),IconButton(
+              ),
+              IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.home_filled),
+                icon: Container(width: 60,
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(500),
+                    border: Border.all(color: Colors.black)
+                  ),
+
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(200),
+                    child: Image.asset(
+                      "assets/profiles/tommy.jpg",
+                      fit: BoxFit.contain,
+                      width: 60,
+                    ),
+                  ),
+                ),
               ),
             ],
           ),
