@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../instaBody.dart';
+
 class HomePage extends StatelessWidget {
   final topBar = AppBar(
     backgroundColor: Color(0xff8faf8),
@@ -36,6 +38,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: topBar,
+      body: InstaBody(),
       bottomNavigationBar: Container(
         height: 50,
         child: BottomAppBar(
@@ -45,7 +48,7 @@ class HomePage extends StatelessWidget {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.home_filled),
+                icon: Icon(Icons.home),
               ),
               IconButton(
                 onPressed: () {},
@@ -67,8 +70,9 @@ class HomePage extends StatelessWidget {
               IconButton(
                 onPressed: () {},
                 icon: Container(width: 60,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(500),
-                    border: Border.all(color: Colors.black)
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(500),
+                      border: Border.all(color: Colors.black)
                   ),
 
                   child: ClipRRect(
