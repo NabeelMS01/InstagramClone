@@ -67,6 +67,9 @@ flutter:
     - family: Aveny
       fonts:
         - asset: assets/fonts/AvenyRegular.ttf
+    - family: roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
 
 
   #
